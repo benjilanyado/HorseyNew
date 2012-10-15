@@ -9,7 +9,6 @@ class Race
 
 	def initialize()
 
-<<<<<<< HEAD
 		@total = 100
 
 		show_options
@@ -81,22 +80,6 @@ class Race
 			puts "You lose!"
 			@total -= @field.total_loss(@bet_size, @horse_choice)
 		end
-=======
-	@horse_choice = horse_choice
-	@bet_size = bet_size
-  @field = Field.new  #initializing field and then executing disply_field
-
-	puts "HERE ARE YOUR HORSES & ODDS... PICK ONE"
-	horse_choice = $stdin.gets.chomp
-
-	if @field.horses.has_key?(horse_choice)
-	  puts "HOW MUCH YOU WANNA PAY?"
-    bet_size = $stdin.gets.chomp	
-    make_race_happen	    #as defined below
-  else 
-		puts "WRONG"
-  end
->>>>>>> bbe164b7a71a241e29a09b88214d74160bd15be4
 
 		puts "You have now #{@total} credits"
 				
@@ -104,17 +87,10 @@ class Race
 				puts "\n(Q)uit or (C)ontinue?"
 				choice = $stdin.gets.chomp	
 
-<<<<<<< HEAD
 					if choice.upcase == "C"
 
 						@pot = @pot.to_i - @bet_size.to_i
 						show_options
-=======
-	def make_race_happen
-		puts "#{@horse_choice} lost you fool, there goes #{@bet_size}"    #as you have defined these instance variables abvove
-	end
->>>>>>> bbe164b7a71a241e29a09b88214d74160bd15be4
-
 
 					elsif
 						puts "bye!"	

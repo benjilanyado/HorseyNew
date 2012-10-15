@@ -13,7 +13,7 @@ class Field
 	attr_accessor :horses_entered
 	attr_accessor :winner
 
-<<<<<<< HEAD
+
 	include Enumerable
 
 	
@@ -34,26 +34,11 @@ class Field
 			]
 
 			total_odds
-
-=======
-		def initialize
-			@horses = {
-				"Dave" => "4",
-				"Jim" => "20",
-				"Phil" => "4",
-				"Bob" => "5",
-				"Sophie" => "3",
-				"Gary" => "8",
-				"Lucy" => "7"
-			}
-
-		  display_field
->>>>>>> bbe164b7a71a241e29a09b88214d74160bd15be4
 		end
 
 
 		def display_field
-<<<<<<< HEAD
+
 
 			@horses.each_with_index do |horses, index|
 
@@ -115,13 +100,6 @@ class Field
 		def total_loss(bet_size, choice)
 			bet_size.to_i
 		end
-
-=======
-			@horses.each do|name, odds|
-				puts "#{name} #{odds}"
-			end
-		end
->>>>>>> bbe164b7a71a241e29a09b88214d74160bd15be4
 end
 
 
