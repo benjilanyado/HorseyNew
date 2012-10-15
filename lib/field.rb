@@ -53,8 +53,6 @@ class Field
 
 				@total_odds = @horses.collect {|h| h[:odds] }.inject(:+)
 
-				puts "Total odds were #{@total_odds}"
-
 				pretend_field_maker
 			
 		end
@@ -76,8 +74,6 @@ class Field
 			end
 
 			@pretend_field = @pretend_field.shuffle!
-
-			puts "There were a total of #{@pretend_field.length} horses running"
 
 			@winner = @pretend_field.pop
 
